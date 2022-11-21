@@ -13,6 +13,7 @@ import "./layout.css"
 import "./style-boot.css"
 
 import Navbar from "./navbar"
+import Carousel from "./carousel"
 
 
 const Layout = ({ children }) => {
@@ -29,6 +30,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Carousel />
+      
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
